@@ -1,0 +1,79 @@
+/* Reset básico */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  background:#fff600; /* amarelo vivo */
+  color:#1e293b;
+}
+h1,h2{font-weight:800}
+h1{font-size:3.5rem}
+h2{font-size:2.2rem;text-align:center;margin-bottom:0.5rem}
+.subtitle{text-align:center;font-size:1.25rem;max-width:800px;margin:0.5rem auto 1.5rem;color:#f1f5f9}
+.section-sub{text-align:center;margin-bottom:2rem;font-size:1.1rem;color:#1e293b}
+header.hero{
+  position:relative;
+  color:#fff;
+  text-align:center;
+  padding:4rem 1rem 6rem;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background-image:linear-gradient(90deg,#0066ff 0%,#fff600 100%),url('../img/hero-finance.jpg');
+  background-size:cover;background-position:center;
+  mix-blend-mode:overlay;opacity:0.9;
+}
+.hero-content{position:relative;z-index:2}
+.icon-circle{
+  width:92px;height:92px;border-radius:50%;
+  background:rgba(255,255,255,0.12);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 1rem;
+}
+.features{
+  list-style:none;display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;
+  font-size:1.05rem
+}
+.features li{display:flex;align-items:center;gap:0.4rem}
+.overview{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;margin-top:-3.5rem;padding:0 1rem 3rem
+}
+.card{
+  background:#f5f7fa;border-radius:12px;padding:1.5rem;box-shadow:0 2px 6px rgba(0,0,0,0.08);
+  transition:transform .2s,box-shadow .2s
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 6px 15px rgba(0,0,0,0.12)}
+.card.psi{background:#0066ff;color:#fff}
+.card.positive{border-left:6px solid #16a34a}
+.card.negative{border-left:6px solid #dc2626}
+.label{font-size:0.9rem;opacity:.8;margin-bottom:0.25rem}
+.value{font-size:2rem;font-weight:700}
+.mini{font-size:0.9rem}
+.mini.positive{color:#bbf7d0}
+.mini.negative{color:#fecaca}
+
+.companies{padding:2rem 1rem 4rem}
+.grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem
+}
+.stock-card{
+  background:#f5f7fa;border-radius:12px;padding:1.5rem;box-shadow:0 2px 6px rgba(0,0,0,0.08);
+  transition:transform .2s,box-shadow .2s;border-top:6px solid transparent
+}
+.stock-card:hover{transform:translateY(-4px);box-shadow:0 6px 15px rgba(0,0,0,0.12)}
+.stock-card.positive{border-color:#16a34a}
+.stock-card.negative{border-color:#dc2626}
+.stock-card.neutral{border-color:#64748b}
+.stock-card h3{font-size:1.3rem;color:#1e293b;margin-bottom:0.25rem}
+.stock-card .name{font-size:0.95rem;color:#475569;margin-bottom:0.7rem}
+.badge{
+  background:#e2e8f0;color:#1e293b;padding:0.2rem 0.75rem;border-radius:20px;font-size:0.75rem;display:inline-block;margin-bottom:1rem
+}
+.price{font-size:1.75rem;font-weight:700;margin-bottom:0.4rem;color:#1e293b}
+.change{font-size:1rem;font-weight:600;margin-bottom:1rem}
+.stock-card.positive .change{color:#16a34a}
+.stock-card.negative .change{color:#dc2626}
+.metrics{font-size:0.83rem;color:#475569;border-top:1px solid #cbd5e1;padding-top:0.7rem;display:flex;justify-content:space-between}
+.metrics span{display:block;font-weight:500;font-size:0.72rem;color:#64748b;margin-bottom:0.15rem}
+
+footer{text-align:center;padding:2rem 1rem;background:#1e293b;color:#f1f5f9;font-size:0.85rem}
